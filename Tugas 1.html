@@ -345,6 +345,48 @@ title="Print to PDF"
    </strong>
   </a>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#soal-1">
+   <strong>
+    Soal 1
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#soal-2">
+   <strong>
+    Soal 2
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#median">
+   <strong>
+    2.1 Median
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mean">
+   <strong>
+    2.2 Mean
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modus">
+   <strong>
+    2.3 Modus
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#soal-3">
+   <strong>
+    Soal 3
+   </strong>
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -378,6 +420,48 @@ title="Print to PDF"
    </strong>
   </a>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#soal-1">
+   <strong>
+    Soal 1
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#soal-2">
+   <strong>
+    Soal 2
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#median">
+   <strong>
+    2.1 Median
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mean">
+   <strong>
+    2.2 Mean
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modus">
+   <strong>
+    2.3 Modus
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#soal-3">
+   <strong>
+    Soal 3
+   </strong>
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -390,13 +474,17 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="tugas-1">
 <h1><strong>Tugas 1</strong><a class="headerlink" href="#tugas-1" title="Permalink to this headline">#</a></h1>
-<p>Nama : Ribut Dwi Artah<br />
+<p><strong>Nama : Ribut Dwi Artah<br />
 NIM  : 200411100023<br />
-Kelas : Penambangan Data A</p>
+Kelas : Penambangan Data IF5A</strong></p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="topik-data">
 <h1><strong>Topik Data</strong><a class="headerlink" href="#topik-data" title="Permalink to this headline">#</a></h1>
 <p>Data berasal dari makalah master yang tidak diterbitkan oleh Carl Hoffstedt. Mereka menghubungkan tingkat kecelakaan mobil, dalam kecelakaan per juta mil kendaraan dengan beberapa istilah potensial. Data mencakup 39 bagian jalan raya besar di negara bagian Minnesota pada tahun 1973. Tujuan dari analisis ini adalah untuk memahami dampak variabel desain, Acpts, Slim, Sig, dan Shldyang berada di bawah kendali departemen jalan raya, terhadap kecelakaan.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="soal-1">
+<h1><strong>Soal 1</strong><a class="headerlink" href="#soal-1" title="Permalink to this headline">#</a></h1>
+<p><strong>Membaca Data URL</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> 
@@ -446,6 +534,60 @@ memory usage: 4.1+ KB
 </div>
 </div>
 </div>
+<p><strong>Data rate</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_rate</span><span class="o">=</span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;rate&quot;</span><span class="p">]</span>
+<span class="n">data_rate</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     4.58
+1     2.86
+2     3.02
+3     2.29
+4     1.61
+5     6.87
+6     3.85
+7     6.12
+8     3.29
+9     5.88
+10    4.20
+11    4.61
+12    4.80
+13    3.85
+14    2.69
+15    1.99
+16    2.01
+17    4.22
+18    2.76
+19    2.55
+20    1.89
+21    2.34
+22    2.83
+23    1.81
+24    9.23
+25    8.60
+26    8.21
+27    2.93
+28    7.48
+29    2.57
+30    5.77
+31    2.90
+32    2.97
+33    1.84
+34    3.78
+35    2.76
+36    4.27
+37    3.05
+38    4.12
+Name: rate, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data len</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_len</span><span class="o">=</span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;len&quot;</span><span class="p">]</span>
@@ -498,8 +640,504 @@ Name: len, dtype: float64
 </div>
 </div>
 </div>
-<p>2</p>
-<p>Median</p>
+<p><strong>Data adt</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_adt</span><span class="o">=</span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;adt&quot;</span><span class="p">]</span>
+<span class="n">data_adt</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     69
+1     73
+2     49
+3     61
+4     28
+5     30
+6     46
+7     25
+8     43
+9     23
+10    23
+11    20
+12    18
+13    21
+14    27
+15    22
+16    19
+17     9
+18    12
+19    12
+20    15
+21     8
+22     5
+23     5
+24    23
+25    13
+26     7
+27    10
+28    12
+29     9
+30     4
+31     5
+32     4
+33     5
+34     2
+35     3
+36     1
+37     3
+38     1
+Name: adt, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data trks</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_trks</span><span class="o">=</span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;trks&quot;</span><span class="p">]</span>
+<span class="n">data_trks</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      8
+1      8
+2     10
+3     13
+4     12
+5      6
+6      8
+7      9
+8     12
+9      7
+10     6
+11     9
+12    14
+13     8
+14     7
+15     9
+16     9
+17    11
+18     8
+19     7
+20    13
+21     8
+22     9
+23    15
+24     6
+25     6
+26     8
+27    10
+28     7
+29     8
+30     8
+31    10
+32    13
+33    12
+34    10
+35     8
+36    11
+37    11
+38    10
+Name: trks, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data sigs1</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_sigs1</span><span class="o">=</span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;sigs1&quot;</span><span class="p">]</span>
+<span class="n">data_sigs1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     0.200401
+1     0.062073
+2     0.102564
+3     0.093897
+4     0.049975
+5     2.007504
+6     0.816686
+7     0.570840
+8     1.453331
+9     1.331065
+10    1.992248
+11    1.285301
+12    0.745185
+13    0.337838
+14    0.685106
+15    0.112867
+16    0.202249
+17    0.362149
+18    0.115875
+19    1.039237
+20    0.144944
+21    0.084674
+22    0.177796
+23    0.045455
+24    2.789330
+25    1.239598
+26    0.649366
+27    0.139396
+28    0.176655
+29    0.090090
+30    0.185269
+31    0.106496
+32    0.051308
+33    0.147596
+34    0.076819
+35    0.071276
+36    0.048473
+37    0.049850
+38    0.077459
+Name: sigs1, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data slim</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_slim</span><span class="o">=</span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;slim&quot;</span><span class="p">]</span>
+<span class="n">data_slim</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     55
+1     60
+2     60
+3     65
+4     70
+5     55
+6     55
+7     55
+8     50
+9     50
+10    60
+11    50
+12    50
+13    60
+14    55
+15    60
+16    60
+17    50
+18    55
+19    60
+20    55
+21    60
+22    50
+23    60
+24    40
+25    45
+26    55
+27    55
+28    45
+29    60
+30    45
+31    55
+32    55
+33    55
+34    55
+35    50
+36    55
+37    60
+38    55
+Name: slim, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data shld</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_shld</span><span class="o">=</span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;shld&quot;</span><span class="p">]</span>
+<span class="n">data_shld</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     10
+1     10
+2     10
+3     10
+4     10
+5     10
+6      8
+7     10
+8      4
+9      5
+10    10
+11     2
+12     8
+13    10
+14    10
+15    10
+16    10
+17     6
+18     6
+19    10
+20     8
+21    10
+22     8
+23     7
+24     2
+25     2
+26     8
+27     6
+28     3
+29     7
+30     3
+31     1
+32     4
+33     8
+34     3
+35     4
+36     4
+37     8
+38     3
+Name: shld, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data lane</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_lane</span><span class="o">=</span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;lane&quot;</span><span class="p">]</span>
+<span class="n">data_lane</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     8
+1     4
+2     4
+3     6
+4     4
+5     4
+6     4
+7     4
+8     4
+9     4
+10    4
+11    4
+12    2
+13    4
+14    4
+15    4
+16    4
+17    2
+18    2
+19    4
+20    4
+21    2
+22    2
+23    2
+24    4
+25    2
+26    2
+27    2
+28    2
+29    2
+30    2
+31    2
+32    2
+33    2
+34    2
+35    2
+36    2
+37    2
+38    2
+Name: lane, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data acpt</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_acpt</span><span class="o">=</span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;acpt&quot;</span><span class="p">]</span>
+<span class="n">data_acpt</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      4.6
+1      4.4
+2      4.7
+3      3.8
+4      2.2
+5     24.8
+6     11.0
+7     18.5
+8      7.5
+9      8.2
+10     5.4
+11    11.2
+12    15.2
+13     5.4
+14     7.9
+15     3.2
+16    11.0
+17     8.9
+18    12.4
+19     7.8
+20     9.6
+21     4.3
+22    11.1
+23     6.8
+24    53.0
+25    17.3
+26    27.3
+27    18.0
+28    30.2
+29    10.3
+30    18.2
+31    12.3
+32     7.1
+33    14.0
+34    11.3
+35    16.3
+36     9.6
+37     9.0
+38    10.4
+Name: acpt, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data itg</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_itg</span><span class="o">=</span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;itg&quot;</span><span class="p">]</span>
+<span class="n">data_itg</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     1.20
+1     1.43
+2     1.54
+3     0.94
+4     0.65
+5     0.34
+6     0.47
+7     0.38
+8     0.95
+9     0.12
+10    0.29
+11    0.15
+12    0.00
+13    0.34
+14    0.26
+15    0.68
+16    0.20
+17    0.18
+18    0.14
+19    0.05
+20    0.05
+21    0.00
+22    0.00
+23    0.00
+24    0.56
+25    0.31
+26    0.13
+27    0.00
+28    0.09
+29    0.00
+30    0.00
+31    0.00
+32    0.00
+33    0.00
+34    0.04
+35    0.07
+36    0.00
+37    0.00
+38    0.00
+Name: itg, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data lwid</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_lwid</span><span class="o">=</span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;lwid&quot;</span><span class="p">]</span>
+<span class="n">data_lwid</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     12
+1     12
+2     12
+3     12
+4     12
+5     12
+6     12
+7     12
+8     12
+9     12
+10    12
+11    12
+12    12
+13    12
+14    12
+15    12
+16    12
+17    12
+18    13
+19    12
+20    12
+21    12
+22    12
+23    12
+24    12
+25    12
+26    12
+27    12
+28    12
+29    12
+30    11
+31    13
+32    12
+33    10
+34    12
+35    12
+36    11
+37    12
+38    12
+Name: lwid, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="soal-2">
+<h1><strong>Soal 2</strong><a class="headerlink" href="#soal-2" title="Permalink to this headline">#</a></h1>
+<p><strong>Membuat statistik deskriptif dari data (setiap atribut yang bertipe nimerik)</strong></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="median">
+<h1><strong>2.1 Median</strong><a class="headerlink" href="#median" title="Permalink to this headline">#</a></h1>
+<p><strong>Data rate</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;rate&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.05
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data len</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;len&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
@@ -512,7 +1150,140 @@ Name: len, dtype: float64
 </div>
 </div>
 </div>
-<p>Mean</p>
+<p><strong>Data adt</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;adt&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>13.0
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data trks</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;trks&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9.0
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data sigs1</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;sigs1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.176655112651646
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data slim</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;slim&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>55.0
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data shld</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;shld&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8.0
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data lane</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;lane&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.0
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data acpt</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;acpt&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10.3
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data itg</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;itg&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.13
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data lwid</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;lwid&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>12.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="mean">
+<h1><strong>2.2 Mean</strong><a class="headerlink" href="#mean" title="Permalink to this headline">#</a></h1>
+<p><strong>Data rate</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;rate&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.933333333333334
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data len</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;len&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -525,7 +1296,142 @@ Name: len, dtype: float64
 </div>
 </div>
 </div>
-<p>Modus</p>
+<p><strong>Data adt</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;adt&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>19.615384615384617
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data trks</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;trks&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9.333333333333334
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data sigs1</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;sigs1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.510724187639508
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data slim</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;slim&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>55.0
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data shld</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;shld&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>6.871794871794871
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data lane</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;lane&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.128205128205128
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data acpt</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;acpt&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>12.15897435897436
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data itg</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;itg&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.29641025641025637
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data lwid</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;lwid&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>11.948717948717949
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="modus">
+<h1><strong>2.3 Modus</strong><a class="headerlink" href="#modus" title="Permalink to this headline">#</a></h1>
+<p><strong>Data rate</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;rate&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    2.76
+1    3.85
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data lane</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;len&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
@@ -577,7 +1483,206 @@ dtype: float64
 </div>
 </div>
 </div>
-<p>3</p>
+<p><strong>Data adt</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;adt&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    5
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data trks</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;trks&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    8
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data sigs1</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;sigs1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     0.045455
+1     0.048473
+2     0.049850
+3     0.049975
+4     0.051308
+5     0.062073
+6     0.071276
+7     0.076819
+8     0.077459
+9     0.084674
+10    0.090090
+11    0.093897
+12    0.102564
+13    0.106496
+14    0.112867
+15    0.115875
+16    0.139396
+17    0.144944
+18    0.147596
+19    0.176655
+20    0.177796
+21    0.185269
+22    0.200401
+23    0.202249
+24    0.337838
+25    0.362149
+26    0.570840
+27    0.649366
+28    0.685106
+29    0.745185
+30    0.816686
+31    1.039237
+32    1.239598
+33    1.285301
+34    1.331065
+35    1.453331
+36    1.992248
+37    2.007504
+38    2.789330
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data slim</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;slim&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    55
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data shld</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;shld&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    10
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data lane</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;lane&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    2
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data acpt</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;acpt&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     5.4
+1     9.6
+2    11.0
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data itg</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;itg&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    0.0
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Data lwid</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;lwid&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    12
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="soal-3">
+<h1><strong>Soal 3</strong><a class="headerlink" href="#soal-3" title="Permalink to this headline">#</a></h1>
+<p><strong>Mendeskripsikan kemiringan/skewned dari data setiap variabel (bertipe numerik)</strong></p>
+<p><strong>Data rate</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_rate</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.2157035677218981
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">data_rate</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+  warnings.warn(msg, FutureWarning)
+</pre></div>
+</div>
+<img alt="_images/Tugas 1_102_1.png" src="_images/Tugas 1_102_1.png" />
+</div>
+</div>
+<p><strong>Data len</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#melihat seberapa besar kemiringan/menghitung kemiiringan</span>
@@ -604,7 +1709,268 @@ dtype: float64
   warnings.warn(msg, FutureWarning)
 </pre></div>
 </div>
-<img alt="_images/Tugas 1_16_1.png" src="_images/Tugas 1_16_1.png" />
+<img alt="_images/Tugas 1_105_1.png" src="_images/Tugas 1_105_1.png" />
+</div>
+</div>
+<p>Data adt</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_adt</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.4893690559725854
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">data_adt</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+  warnings.warn(msg, FutureWarning)
+</pre></div>
+</div>
+<img alt="_images/Tugas 1_108_1.png" src="_images/Tugas 1_108_1.png" />
+</div>
+</div>
+<p><strong>Data trks</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_trks</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5968916535271946
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">data_trks</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+  warnings.warn(msg, FutureWarning)
+</pre></div>
+</div>
+<img alt="_images/Tugas 1_111_1.png" src="_images/Tugas 1_111_1.png" />
+</div>
+</div>
+<p><strong>Data sigs1</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_sigs1</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.8169814284761985
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">data_sigs1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+  warnings.warn(msg, FutureWarning)
+</pre></div>
+</div>
+<img alt="_images/Tugas 1_114_1.png" src="_images/Tugas 1_114_1.png" />
+</div>
+</div>
+<p><strong>Data slim</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_slim</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.20793658725367545
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">data_slim</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+  warnings.warn(msg, FutureWarning)
+</pre></div>
+</div>
+<img alt="_images/Tugas 1_117_1.png" src="_images/Tugas 1_117_1.png" />
+</div>
+</div>
+<p><strong>Data shld</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_shld</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.44205844605619127
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">data_shld</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+  warnings.warn(msg, FutureWarning)
+</pre></div>
+</div>
+<img alt="_images/Tugas 1_120_1.png" src="_images/Tugas 1_120_1.png" />
+</div>
+</div>
+<p><strong>Data lane</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_lane</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.3416052488237826
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">data_lane</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+  warnings.warn(msg, FutureWarning)
+</pre></div>
+</div>
+<img alt="_images/Tugas 1_123_1.png" src="_images/Tugas 1_123_1.png" />
+</div>
+</div>
+<p><strong>Data acpt</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_acpt</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.570094728928159
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">data_acpt</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+  warnings.warn(msg, FutureWarning)
+</pre></div>
+</div>
+<img alt="_images/Tugas 1_126_1.png" src="_images/Tugas 1_126_1.png" />
+</div>
+</div>
+<p><strong>Data itg</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_itg</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.7410468076130374
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">data_itg</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+  warnings.warn(msg, FutureWarning)
+</pre></div>
+</div>
+<img alt="_images/Tugas 1_129_1.png" src="_images/Tugas 1_129_1.png" />
+</div>
+</div>
+<p><strong>Data lwid</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_lwid</span><span class="o">.</span><span class="n">skew</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-1.98490263080023
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">data_lwid</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+  warnings.warn(msg, FutureWarning)
+</pre></div>
+</div>
+<img alt="_images/Tugas 1_132_1.png" src="_images/Tugas 1_132_1.png" />
 </div>
 </div>
 </section>
